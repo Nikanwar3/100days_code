@@ -16,7 +16,7 @@ public class Queue {
             }
             rear ++;
             arr[rear] = data;
-
+// rear
         }
 
         public static void main(string[]args) {
