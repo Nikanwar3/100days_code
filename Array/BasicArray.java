@@ -1,11 +1,16 @@
 import java.util.*;
 public class BasicArray {
     public static void main(String[]args){
-       for(int line =1; line<=4;line++) {
-        for(int star=1; star<=line;star++){
-            System.out.print("*");
-        }
-        System.out.println();
-       }
+    Scanner sc = new Scanner(System.in);
+        int marks[] = new int [100];
+        marks[0] = sc.nextInt();
+        marks[1] = sc.nextInt();
+        marks[2] = sc.nextInt();
+        System.out.println("physics : " + marks[0]);
+        System.out.println("chemistry : " + marks[1]);
+        System.out.println("biology : " + marks[2]);
+
+
+
     }
 }
