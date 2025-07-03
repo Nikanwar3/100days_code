@@ -1,23 +1,20 @@
-// import java.util.*;
-public class Basic{
+import java.util.*;
+public class Basic {
 
-
-
-    public static int getlargest(int numbers[]){
-        int largest = Integer.MIN_VALUE;
-        for(int i =0;i<numbers.length;i++){
-            if(largest<numbers[i]){
-                largest = numbers[i];
+    public static int getSmallest(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        for(int i = 0; i < numbers.length; i++) {
+            if(numbers[i] < smallest) {  // Fixed this condition
+                smallest = numbers[i];
             }
         }
-        return largest;
+        return smallest;
+    }  // Added this missing closing brace
 
-
-    }
-    public static void main(String[]args) {
-
-        int numbers[] = {1,2,6,3,5};
-        System.out.println("largest number is : " + getlargest(numbers) );
+    public static void main(String[] args) {
+        int numbers[] = {1, 2, 6, 3, 5};
+        System.out.println("smallest number is : " + getSmallest(numbers));
+        
         // Scanner sc = new Scanner(System.in);
         // float a = 4.4f;
         // int b = (int)a;
@@ -39,15 +36,9 @@ public class Basic{
         // int area = side * side;
         // System.out.println(area);
 
-
         // float pencil = 10.5f;
         // float pen = 20.5f;
         // float eraser = 5.5f;
         // int $ =24;
-        
-
-
-
-
     }
-}
+} 
