@@ -1,6 +1,6 @@
  class reverse {
     public static void reverse(int numbers[]) {
-        int first = 0, last = numbers.length - 1;
+        int first = 0, last = numbers.length - 1; //first declare first and end point 
         
         while (first < last) {
             int temp = numbers[first];
