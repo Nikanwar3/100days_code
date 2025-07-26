@@ -14,9 +14,15 @@ public class linearSearch{
         int key = 8;
         int index = linear( numbers, key);
         if(index == -1) {
-            System.out.println("not found");
+            System.out.println("not found"); // if the key is not found
         }
         System.out.println();
 
     }
 }
+
+
+
+
+
+
