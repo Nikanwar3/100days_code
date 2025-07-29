@@ -12,7 +12,7 @@ public class Array{
     }
     public static void  main(String[]args){
         int array[] = {1,2,6,3,5};
-        System.out.println("largest valur is :" + getLargest(array));
+        System.out.println("largest valur is :" + getLargest(array));//array);
 
     }
 }
