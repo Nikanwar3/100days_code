@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ConsecutiveEvenFrequencySum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
+        int sum = 0;
+        int count = 1;
+        for (int i = 1; i < str.length(); i++) {
+            if (str.charAt(i) == str.charAt(i - 1)) {
+                count++;
+            } else {
+                if (count % 2 == 0) {
+                    sum += count;
+                }
+                count = 1;
+            }
+        }
+        
+        if (count % 2 == 0) {
+            sum += count;
+        }
+
+        System.out.println(sum);
+    }
+}
