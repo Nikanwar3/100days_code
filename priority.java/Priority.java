@@ -75,7 +75,10 @@ public class Priority {
         pq.add(new Student("A", 2));
         pq.add(new Student("B", 1));
 
-        while (!pq.isEmpty()) {
+        while (!pq.isEmpty()) {         //loop until the queue is empty
+            // Peek the student with the highest priority (lowest rank)
+            // System.out.println(pq.peek().name + " " + pq.peek().rank);
+            // Remove the student with the highest priority
             Student s = pq.remove();
             System.out.println(s.name + " " + s.rank);
         }
