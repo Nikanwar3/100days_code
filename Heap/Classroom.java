@@ -9,7 +9,7 @@ public class Classroom{
 
             while(arr.get(x) < arr.get(par)){       // O(log n)
                 // Swap
-                int temp = arr.get(x);
+                int temp = arr.get(x);              // O(log n)
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
             }
