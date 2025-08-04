@@ -17,7 +17,7 @@ public class Basics {
             System.out.println("not found");
         }
         else{
-            System.out.println("key at index " + index);
+            System.out.println("key at index " + index); //index of the key in the array
         }
 
 
