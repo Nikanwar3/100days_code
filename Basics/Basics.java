@@ -14,7 +14,7 @@ public class Basics {
         int key = 20;
         int index = linearSearch(numbers,key);
         if(index == -1) {
-            System.out.println("not found");
+            System.out.println("not found");// index of the key in the array
         }
         else{
             System.out.println("key at index " + index); //index of the key in the array
