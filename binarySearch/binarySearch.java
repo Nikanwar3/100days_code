@@ -25,7 +25,7 @@ public class binarySearch {
         if (result != -1) {
             System.out.println("Element found at index: " + result);
         } else {
-            System.out.println("Element not found");
+            System.out.println("Element not found"); // Output if key is not found
         }
     }
 }
