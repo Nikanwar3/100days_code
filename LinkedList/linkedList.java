@@ -74,7 +74,7 @@ public class linkedList{
         }
     }
     public static void main(String[]args){
-        linkedList ll = new linkedList();
+        linkedList ll = new linkedList();//linkedList object
 
     }
 }
