@@ -68,7 +68,14 @@ public class linkedList{
             this.data = data;
             this.next = null;
 
-            public void addFirst(int data) {
+            public void addFirst(int data) {// Insert at the beginning
+                Node newNode = new Node(data);
+                if (head == null) {
+                    head = newNode;
+                } else {
+                    newNode.next = head;
+                    head = newNode;
+                }
                 
             }
         }
