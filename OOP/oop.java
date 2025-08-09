@@ -10,7 +10,7 @@ public class OOP {                 // main class OOP
         }
 
         // Setter for tip
-        void setTip(int newTip) {
+        void setTip(int newTip) {   //tip 
             tip = newTip;
         }
 
