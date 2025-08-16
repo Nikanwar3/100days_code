@@ -37,7 +37,7 @@ public class Array{
         }
         
         // Update the array
-        Update(marks);
+        Update(marks);                  // in
         
         // Print updated array
         System.out.println("\nUpdated marks:");

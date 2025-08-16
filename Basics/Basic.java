@@ -15,13 +15,13 @@ public class Basic {
         int numbers[] = {1, 2, 6, 3, 5};
         System.out.println("smallest number is : " + getSmallest(numbers));
         
-        // Scanner sc = new Scanner(System.in);
-        // float a = 4.4f;
-        // int b = (int)a;
-        // System.out.println(b);
+        Scanner sc = new Scanner(System.in);
+        float a = 4.4f;
+        int b = (int)a;
+        System.out.println(b);
 
-        // char a = 'a';
-        // char b = 'b';
+        char a = 'a';
+        char b = 'b';
        
         // System.err.println((int)a);
         // System.err.println((int)b);
