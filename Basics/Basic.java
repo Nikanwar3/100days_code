@@ -20,7 +20,7 @@ public class Basic {
         int b = (int)a;
         System.out.println(b);
 
-        char a = 'a';
+        char a = 'a'; // character 'char' cannot be redeclared in the same scope
         char b = 'b';
        
         // System.err.println((int)a);
