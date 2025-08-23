@@ -34,7 +34,7 @@ public class Basic {
 
         // int side = sc.nextInt();
         // int area = side * side;
-        // System.out.println(area);
+        // System.out.println(area); print
 
         // float pencil = 10.5f;
         // float pen = 20.5f;
