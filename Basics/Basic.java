@@ -37,7 +37,7 @@ public class Basic {
         // System.out.println(area); print
 
         // float pencil = 10.5f; // float
-        // float pen = 20.5f;
+        // float pen = 20.5f; // float
         // float eraser = 5.5f;
         // int $ =24;
     }
