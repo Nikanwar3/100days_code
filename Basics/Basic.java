@@ -38,7 +38,7 @@ public class Basic {
 
         // float pencil = 10.5f; // float
         // float pen = 20.5f; // float
-        // float eraser = 5.5f;
+        // float eraser = 5.5f;//float
         // int $ =24;
     }
 } //
