@@ -47,32 +47,51 @@
 //     }
 // }
 
+// import java.util.Arrays;
 
-import java.util.Arrays;
+// class Array {
+//     public static void main(String[] args) {
+//         // Example array
+//         int arr[] = {4, 6, 3, 7};
 
-class Array {
-    public static void main(String[] args) {
-        int arr[] = {4, 6, 3, 7};
-        System.out.println("Triangles = " + countTriangles(arr));
-    }
+//         // Print total number of triangles possible
+//         System.out.println("Triangles = " + countTriangles(arr));
+//     }
 
-    public static int countTriangles(int arr[]) {
-        int n = arr.length;
-        int count = 0;
+//     // Function to count number of valid triangles
+//     // A triangle is valid if sum of any two sides > third side
+//     public static int countTriangles(int arr[]) {
+//         int n = arr.length;
+//         int count = 0;
 
-        Arrays.sort(arr);  
+//         // Step 1: Sort the array
+//         Arrays.sort(arr);  
 
-        for (int k = n - 1; k >= 2; k--) {
-            int i = 0, j = k - 1;
-            while (i < j) {
-                if (arr[i] + arr[j] > arr[k]) {
-                    count += (j - i);
-                    j--;
-                } else {
-                    i++;
-                }
-            }
-        }
-        return count;
-    }
+//         // Step 2: Fix the largest element one by one
+//         for (int k = n - 1; k >= 2; k--) {
+//             int i = 0, j = k - 1;
+
+//             // Step 3: Use two pointers to find valid pairs
+//             while (i < j) {
+//                 if (arr[i] + arr[j] > arr[k]) {
+//                     // If arr[i] + arr[j] > arr[k],
+//                     // then all elements from i..j-1 with arr[j] are valid
+//                     count += (j - i);
+//                     j--;
+//                 } else {
+//                     i++;
+//                 }
+//             }
+//         }
+//         return count;
+//     }
+// }
+
+
+class Array{
+   public static void main(String args[]){
+    int arr[] = {1,2,3,4,5};
+    System.out.println(arr.length);
+   } 
+
 }
