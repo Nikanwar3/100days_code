@@ -27,6 +27,6 @@ public class statement {
             sum = sum + i;            
             i++;                     
         }
-        System.out.println();
+        System.out.println(); // 
     }
 }
