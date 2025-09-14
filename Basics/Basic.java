@@ -1,5 +1,6 @@
 // 
 
+
 public class Basic{
     public static void subArray(int numbers[]){
         int currSum =0;
