@@ -1,24 +1,31 @@
-import java.util.Scanner;
+// import java.util.*;
+import java.math.BigInteger;
+import java.util.stream.Collectors;
 
-public class Factorial{
+public class Factorial {
+    // Recursive factorial using BigInteger
+    private static BigInteger factorial(BigInteger n) {
+        if (n.equals(BigInteger.ZERO) || n.equals(BigInteger.ONE)) {
+            return BigInteger.ONE;
+        }
+        return n.multiply(factorial(n.subtract(BigInteger.ONE)));
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = scanner.nextInt();
-        long factorial = 1;
+        BigInteger n = BigInteger.valueOf(num);
 
-        // Calculate factorial
-        for (int i = 1; i <= num; i++) {
-            factorial *= i;
-        }
+        BigInteger fact = factorial(n);
 
-        
-        String factStr = Long.toString(factorial);
-        for (char c : factStr.toCharArray()) {
-            if (c != '0') {
-                System.out.print(c);
-            }
-        }
-        System.out.println();
+        // Convert to string and filter out zeros using streams
+        String noZeros = fact.toString()
+                .chars()
+                .filter(ch -> ch != '0')
+                .mapToObj(ch -> String.valueOf((char) ch))
+                .collect(Collectors.joining());
+
+        System.out.println(noZeros);
     }
 }
