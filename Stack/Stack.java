@@ -1,86 +1,79 @@
-class Stack {
-    static int capacity = 1000;
-    static int a[] = new int[capacity];
-    static int top = -1;  // Fixed: changed 'temp' to 'top'
-    
-    // Check if stack is full
-    static boolean isfull() {
-        return top == capacity - 1;  // Now 'top' is defined
+// import java.util.EmptyStackException;
+
+class MinStack {
+    private static final int CAPACITY = 1000;
+    private int[] mainStack = new int[CAPACITY];
+    private int[] minStack = new int[CAPACITY]; // keeps track of min
+    private int top = -1;
+    private int minTop = -1;
+
+    public boolean isFull() {
+        return top == CAPACITY - 1;
     }
 
-    // Check if stack is empty
-    static boolean isEmpty() {
-        return top == -1;  // Fixed: correct syntax
+    public boolean isEmpty() {
+        return top == -1;
     }
-    
-    // Push element to stack
-    static void push(int ele) {
-        if (isfull()) {
-            System.out.println("Stack overflow");
-        } else {  // Added else block to actually push the element
-            top++;
-            a[top] = ele;
-            System.out.println("Pushed: " + ele);
+
+    public void push(int x) {
+        if (isFull()) {
+            throw new RuntimeException("Stack Overflow");
+        }
+        mainStack[++top] = x;
+
+        // push to minStack if minStack empty or x <= current min
+        if (minTop == -1 || x <= minStack[minTop]) {
+            minStack[++minTop] = x;
         }
     }
-    
-    // Pop element from stack (your version - corrected)
-    static void pop() {
+
+    public int pop() {
         if (isEmpty()) {
-            System.out.println("Stack underflow");
-        } else {
-            System.out.println("Popped: " + a[top]);  // Show what's being popped
-            top--;
+            throw new EmptyStackException();
         }
+        int popped = mainStack[top--];
+
+        // if popped equals the minStack top, pop it too
+        if (popped == minStack[minTop]) {
+            minTop--;
+        }
+        return popped;
     }
-    
-    // Peek top element without removing it (your version - corrected)
-    static void peek() {
+
+    public int peek() {
+        if (isEmpty()) throw new EmptyStackException();
+        return mainStack[top];
+    }
+
+    public int getMin() {
+        if (minTop == -1) throw new EmptyStackException();
+        return minStack[minTop];
+    }
+
+    public void display() {
         if (isEmpty()) {
             System.out.println("Stack is empty");
         } else {
-            System.out.println("Top element: " + a[top]);
-        }
-    }
-    
-    // Display all elements in stack
-    static void display() {
-        if (isEmpty()) {
-            System.out.println("Stack is empty");
-        } else {
-            System.out.print("Stack elements (top to bottom): ");
+            System.out.print("Stack (top to bottom): ");
             for (int i = top; i >= 0; i--) {
-                System.out.print(a[i] + " ");
+                System.out.print(mainStack[i] + " ");
             }
             System.out.println();
         }
     }
-    
-    // Get current size of stack
-    static int size() {
-        return top + 1;
-    }
-    
-    // Main method for testing
+
     public static void main(String[] args) {
-        System.out.println("=== Your Stack Operations Sequence ===");
-        
-        // Your sequence:
-        push(10);   // Stack: [10], top = 0
-        push(20);   // Stack: [10, 20], top = 1  
-        push(30);   // Stack: [10, 20, 30], top = 2
-        pop();      // Remove 30, Stack: [10, 20], top = 1
-        peek();     // Show top element (20)
-        push(40);   // Stack: [10, 20, 40], top = 2
-        display();  // Show final stack
-        
-        System.out.println("\n=== Step by Step Explanation ===");
-        System.out.println("1. push(10) → Stack becomes [10]");
-        System.out.println("2. push(20) → Stack becomes [10, 20]");
-        System.out.println("3. push(30) → Stack becomes [10, 20, 30]");
-        System.out.println("4. pop() → Removes 30, Stack becomes [10, 20]");
-        System.out.println("5. peek() → Shows 20 (top element)");
-        System.out.println("6. push(40) → Stack becomes [10, 20, 40]");
-        System.out.println("7. display() → Shows final stack: 40 20 10");
+        MinStack s = new MinStack();
+        s.push(10);
+        s.push(20);
+        s.push(5);
+        s.push(30);
+        s.display(); // 30 5 20 10
+        System.out.println("Current min: " + s.getMin()); // 5
+        s.pop(); // removes 30
+        System.out.println("Top: " + s.peek()); // 5
+        System.out.println("Current min: " + s.getMin()); // 5
+        s.pop(); // removes 5
+        System.out.println("Current min: " + s.getMin()); // 10
     }
 }
