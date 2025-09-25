@@ -1,21 +1,28 @@
-import java.util.*;
-public class array {
-public static void main (String[] args) {
-    int [][] array = {{4,7,8},{8,8,7}};
+// import java.util.*;
+public class LargestSquareOf7s {
+    public static void main(String[] args) {
+        int[][] array = {
+            {7, 7, 0, 7},
+            {7, 7, 7, 7},
+            {0, 7, 7, 7},
+            {7, 7, 7, 7}
+        };
 
-    int countof7 = 0;
-    for(int i =0; i <array.length; i ++) {
-        for(int j=0; j<array[0].length;j++){
-            if(array[i][j] == 7) {
-                countof7++;
+        int n = array.length;
+        int m = array[0].length;
+        int[][] dp = new int[n][m];
+        int maxSize = 0;
 
-            } 
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(array[i][j] == 7){
+                    if(i == 0 || j == 0) dp[i][j] = 1;
+                    else dp[i][j] = 1 + Math.min(dp[i-1][j-1], Math.min(dp[i-1][j], dp[i][j-1]));
+                    maxSize = Math.max(maxSize, dp[i][j]);
+                }
+            }
         }
+
+        System.out.println("Largest square of 7s has size: " + maxSize);
     }
-    System.out.println("Count of 7 is : " + countof7);
-
 }
-}
-    
-
-
