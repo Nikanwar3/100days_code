@@ -47,7 +47,7 @@ public class Basic {
         System.out.println("Maximum SubArray Sum is: " + maxSum);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         int numbers[] = {1, -2, 6, -1, 3};
         subArray(numbers);
     }
