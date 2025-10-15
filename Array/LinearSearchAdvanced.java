@@ -37,7 +37,7 @@ public class LinearSearchAdvanced {
 
     // Find all occurrences
     public static List<Integer> findAllOccurrences(int arr[], int key) {
-        List<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();//find array
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == key) {
                 result.add(i);
