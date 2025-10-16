@@ -112,7 +112,7 @@ public class HeapsDemo {
             int last = arr.remove(arr.size() - 1);
             if (!arr.isEmpty()) {
                 arr.set(0, last);
-                heapifyDown(0);
+                heapifyDown(0);//heapify
             }
             return root;
         }
