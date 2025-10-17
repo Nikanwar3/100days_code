@@ -189,7 +189,7 @@ public class HeapsDemo {
         minHeap.add(10);
         minHeap.add(1);
         System.out.println("Peek: " + minHeap.peek());
-        while (!minHeap.isEmpty()) {
+        while (!minHeap.isEmpty()) { // heap
             System.out.println(minHeap.remove());
         }
 
