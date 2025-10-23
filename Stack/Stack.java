@@ -78,7 +78,7 @@
 //     }
 // }
 
-class MinStack {
+class MinStack {   //main class
     private static final int CAPACITY = 1000;
     private long[] stack = new long[CAPACITY];
     private int top = -1;
