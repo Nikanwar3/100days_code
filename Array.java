@@ -51,7 +51,7 @@ public class Array{
         Scanner sc = new Scanner(System.in);
         int marks[] = new int[50];
         marks[0] = sc.nextInt();
-        marks[1] = sc.nextInt();
+        marks[1] = sc.nextInt();// input 
         marks[2] = sc.nextInt();
 
         System.out.println("physics" + marks[0]);
