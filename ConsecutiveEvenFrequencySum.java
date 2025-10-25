@@ -79,7 +79,7 @@ public class ConsecutiveEvenFrequencySum {
                 count = 1;
             }
         }
-        if (count % 2 == 0) sum += count;
+        if (count % 2 == 0) sum += count;// final check
         return sum;
     }
 }
