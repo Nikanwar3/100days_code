@@ -54,7 +54,7 @@ public class Array{
         marks[1] = sc.nextInt();// input 
         marks[2] = sc.nextInt();
 
-        System.out.println("physics" + marks[0]);
+        System.out.println("physics" + marks[0]); //print 
 
      }
 }
