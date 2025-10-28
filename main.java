@@ -33,7 +33,7 @@ import java.util.*;
 class Solution {
     static class Pair {
         int i, j, sum;
-        Pair(int i, int j, int sum) {
+        Pair(int i, int j, int sum) {//pair constructor
             this.i = i;
             this.j = j;
             this.sum = sum;
