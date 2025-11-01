@@ -18,7 +18,7 @@ public class string{
         String surname = "Kanwar";
         String fullName = name + " " + surname;// to concatenate two strings
 
-        // System.out.println(fullName);
+        // System.out.println(fullName);//
         // System.out.println(fullName.length());
         // System.out.println(fullName.charAt(3));
         printLetters(fullName);
