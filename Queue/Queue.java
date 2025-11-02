@@ -68,7 +68,7 @@ public class Queue {
         return rear == -1;
     }
 
-    public static void add(int data) {
+    public static void add(int data) {// 
         if (rear == size - 1) {
             System.out.println("Queue full");//queue is full
             return;
