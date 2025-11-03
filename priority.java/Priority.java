@@ -71,7 +71,7 @@ public class Priority {
     }
 
     public static void main(String[] args) {
-        PriorityQueue<Student> pq = new PriorityQueue<>();
+        PriorityQueue<Student> pq = new PriorityQueue<>();//
         pq.add(new Student("A", 2));
         pq.add(new Student("B", 1));
 
