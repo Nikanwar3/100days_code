@@ -95,7 +95,7 @@
 //     }
 // }
 public class operator {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         int a = 10, b = 20, c = 30, d = 15;
 
         if ((a > b || c < d) || (a == d && c > b)) {
