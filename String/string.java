@@ -21,7 +21,7 @@ public class string{
         // System.out.println(fullName);//
         // System.out.println(fullName.length());
         // System.out.println(fullName.charAt(3));
-        printLetters(fullName);
+        printLetters(fullName);//
 
     }
 }
