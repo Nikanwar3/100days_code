@@ -61,7 +61,7 @@ public class tries {
     public static void main(String[] args) {
         tries t = new tries();
         String[] words1 = {"w", "wo", "wor", "worl", "world"};
-        String[] words2 = {"a", "banana", "app", "appl", "ap", "apply", "apple"};
+        String[] words2 = {"a", "banana", "app", "appl", "ap", "apply", "apple"};//
 
         System.out.println("Longest Word 1: " + t.longestWord(words1)); // print world
         System.out.println("Longest Word 2: " + t.longestWord(words2)); //  print apple 
