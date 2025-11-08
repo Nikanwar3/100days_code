@@ -35,7 +35,7 @@ public class tries {
         String[] result = new String[]{""};
         dfs(root, result);
         return result[0];
-    }
+    }//
 
     // DFS with prefix condition
     private void dfs(TrieNode node, String[] result) {
