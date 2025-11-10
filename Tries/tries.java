@@ -51,7 +51,7 @@ public class tries {
             }
         }
 
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 26; i++) {//
             if (node.children[i] != null)
                 dfs(node.children[i], result);//
         }
