@@ -81,7 +81,7 @@ class main{
        
         int counter = 1;
        while(counter <=10){
-        System.out.println(counter);
+        System.out.println(counter);//
         counter ++;
        }
        
