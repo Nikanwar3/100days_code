@@ -42,7 +42,7 @@ public class tries {
         if (node == null) return;
 
         // Only proceed if node is end of a word or root
-        if (node != root && !node.isEnd) return;
+        if (node != root && !node.isEnd) return;//
 
         if (node.word != null) {
             if (node.word.length() > result[0].length() ||
