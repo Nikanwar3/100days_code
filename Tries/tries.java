@@ -32,7 +32,7 @@ public class tries {
         for (String w : words)
             insert(w);
 
-        String[] result = new String[]{""};
+        String[] result = new String[]{""};//
         dfs(root, result);
         return result[0];
     }//
