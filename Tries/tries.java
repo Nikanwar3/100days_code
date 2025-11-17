@@ -27,15 +27,17 @@ public class tries {
     }
 
     // Function to find the longest word that can be built character by character
-    public String longestWord(String[] words) {
+    public String longestWord(String[] words) {//
         // Build Trie
         for (String w : words)
             insert(w);
 
         String[] result = new String[]{""};//
         dfs(root, result);
-        return result[0];
+        return result[0];//
     }//
+
+
 
     // DFS with prefix condition
     private void dfs(TrieNode node, String[] result) {
