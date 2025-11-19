@@ -14,7 +14,7 @@ public class string{
         // Scanner sc = new Scanner(System.in);
         // String name ;
         // name = sc.nextLine();
-        String name = "Nidhi";
+        String name = "Nidhi";//
         String surname = "Kanwar";
         String fullName = name + " " + surname;// to concatenate two strings
 
