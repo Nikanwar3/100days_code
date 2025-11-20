@@ -11,7 +11,7 @@ public class string{
     public static void main(String[]args){
         // String str = "abcd";
         // String str2 = new String("abcd");
-        // Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);//
         // String name ;
         // name = sc.nextLine();
         String name = "Nidhi";//
