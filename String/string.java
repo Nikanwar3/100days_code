@@ -8,7 +8,7 @@ public class string{
         System.out.println();
     }
 
-    public static void main(String[]args){
+    public static void main(String[]args){//
         // String str = "abcd";
         // String str2 = new String("abcd");
         // Scanner sc = new Scanner(System.in);//
