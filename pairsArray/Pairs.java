@@ -66,7 +66,7 @@ public class Pairs{
 		for(int j = i+1;j<number.length;j++){
 			System.out.print("("+ curr + "," + number[j] + ")");
 }
-			System.out.println();
+			System.out.println();//
 }
 }
 public static void main(String[]args){
