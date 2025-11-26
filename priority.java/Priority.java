@@ -65,15 +65,15 @@ public class Priority {
         }
 
         @Override
-        public int compareTo(Student s2) {
+        public int compareTo(Student s2) {//
             return this.rank - s2.rank;  // Ascending order of rank
         }
     }
 
     public static void main(String[] args) {
         PriorityQueue<Student> pq = new PriorityQueue<>();//
-        pq.add(new Student("A", 2));
-        pq.add(new Student("B", 1));
+        pq.add(new Student("A", 2));//
+        pq.add(new Student("B", 1));//
 
         while (!pq.isEmpty()) {         //loop until the queue is empty
             // Peek the student with the highest priority (lowest rank)
