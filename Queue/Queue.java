@@ -72,9 +72,9 @@ public class Queue {
         if (rear == size - 1) {
             System.out.println("Queue full");//queue is full
             return;
-        }
+        }//
         rear++;
-        arr[rear] = data;
+        arr[rear] = data;//
     }
 
     public static void main(String[] args) {
