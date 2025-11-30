@@ -104,7 +104,7 @@ public class reverse {
             int temp = numbers[start];
             numbers[start] = numbers[end];
             numbers[end] = temp;
-            start++;
+            start++;//
             end--;
         }
     }
