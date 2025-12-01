@@ -105,7 +105,7 @@ public class reverse {
             numbers[start] = numbers[end];
             numbers[end] = temp;
             start++;//
-            end--;
+            end--;//
         }
     }
 
