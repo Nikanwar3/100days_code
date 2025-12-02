@@ -102,7 +102,7 @@ public class reverse {
         int start = 0, end = numbers.length - 1;
         while (start < end) {
             int temp = numbers[start];
-            numbers[start] = numbers[end];
+            numbers[start] = numbers[end];//
             numbers[end] = temp;
             start++;//
             end--;//
