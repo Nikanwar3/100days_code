@@ -64,7 +64,7 @@ public class Queue {
         size = n;
     }
 
-    public static boolean isEmpty() {
+    public static boolean isEmpty() {//
         return rear == -1;
     }
 
