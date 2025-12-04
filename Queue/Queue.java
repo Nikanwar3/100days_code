@@ -71,7 +71,7 @@ public class Queue {
     public static void add(int data) {// 
         if (rear == size - 1) {
             System.out.println("Queue full");//queue is full
-            return;
+            return;//
         }//
         rear++;
         arr[rear] = data;//
