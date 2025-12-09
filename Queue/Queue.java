@@ -53,9 +53,9 @@
 // }
 
 
-public class Queue {
-    static int arr[];
-    static int size;
+public class Queue {//
+    static int arr[];//
+    static int size;//
     static int rear = -1;
     static int front = -1;
 
