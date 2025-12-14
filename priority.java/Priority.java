@@ -80,7 +80,7 @@ public class Priority {
             // System.out.println(pq.peek().name + " " + pq.peek().rank);
             // Remove the student with the highest priority
             Student s = pq.remove();
-            System.out.println(s.name + " " + s.rank);
+            System.out.println(s.name + " " + s.rank);//print
         }
     }
 }
