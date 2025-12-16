@@ -96,7 +96,7 @@
 // }
 public class operator {
     public static void main(String[] args) {//
-        int a = 10, b = 20, c = 30, d = 15;
+        int a = 10, b = 20, c = 30, d = 15;//
 
         if ((a > b || c < d) || (a == d && c > b)) {
             System.out.println("At least one complex condition is true.");
