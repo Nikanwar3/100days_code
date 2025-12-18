@@ -26,7 +26,7 @@
 
 public class Basic {
     public static void subArray(int numbers[]) {
-        int n = numbers.length;
+        int n = numbers.length;//
         int maxSum = Integer.MIN_VALUE;//
 
         // Step 1: create prefix sum array
