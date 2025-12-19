@@ -31,7 +31,7 @@ public class Basic {
 
         // Step 1: create prefix sum array
         int prefix[] = new int[n];
-        prefix[0] = numbers[0];
+        prefix[0] = numbers[0];//
         for (int i = 1; i < n; i++) {
             prefix[i] = prefix[i - 1] + numbers[i];
         }
