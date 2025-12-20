@@ -24,7 +24,7 @@
 //     }
 // }
 
-public class Basic {
+public class Basic {//
     public static void subArray(int numbers[]) {
         int n = numbers.length;//
         int maxSum = Integer.MIN_VALUE;//
