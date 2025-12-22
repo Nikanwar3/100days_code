@@ -41,7 +41,7 @@ public class Basic {//
             for (int j = i; j < n; j++) {
                 int currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
                 maxSum = Math.max(maxSum, currSum);
-            }
+            }//
         }
 
         System.out.println("Maximum SubArray Sum is: " + maxSum);
