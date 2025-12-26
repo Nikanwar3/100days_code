@@ -31,7 +31,7 @@ public class binaryTree{
         Node left;
         Node(int data){
             this.data = data;
-            this.right = null;
+            this.right = null;//
             this.left = null;
         }
     }
