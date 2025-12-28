@@ -26,7 +26,7 @@ public class binaryTree{
 
 
     static class Node{
-        int data;
+        int data;//
         Node right;
         Node left;
         Node(int data){
