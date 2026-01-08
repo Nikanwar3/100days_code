@@ -146,7 +146,7 @@ public class Array {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        while (t-- > 0) {
+        while (t-- > 0) {//
             int n = sc.nextInt();
             int zeros = 0;
 
