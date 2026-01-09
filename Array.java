@@ -154,7 +154,7 @@ public class Array {
                 if (sc.nextInt() == 0) zeros++;
             }
 
-            if (zeros % 2 == 1)
+            if (zeros % 2 == 1)//
                 System.out.println("Alice");
             else
                 System.out.println("Bob");
