@@ -100,7 +100,7 @@ import java.util.*;
 public class reverse {
     public static void reverse(int numbers[]) {
         int start = 0, end = numbers.length - 1;
-        while (start < end) {
+        while (start < end) {//
             int temp = numbers[start];
             numbers[start] = numbers[end];//
             numbers[end] = temp;//
