@@ -174,7 +174,7 @@ class Stack {
     }
 
     public void pop() {
-        if (stack.isEmpty()) throw new EmptyStackException();
+        if (stack.isEmpty()) throw new EmptyStackException();//
         int removed = stack.pop();
         if (removed == minStack.peek()) {
             minStack.pop();
