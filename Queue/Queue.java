@@ -77,7 +77,7 @@ public class Queue {//
         arr[rear] = data;//
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         Queue q = new Queue(5);
         q.add(10);
         q.add(20);
