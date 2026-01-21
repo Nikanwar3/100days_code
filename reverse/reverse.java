@@ -101,7 +101,7 @@ public class reverse {
     public static void reverse(int numbers[]) {
         int start = 0, end = numbers.length - 1;
         while (start < end) {//
-            int temp = numbers[start];
+            int temp = numbers[start];//
             numbers[start] = numbers[end];//
             numbers[end] = temp;//
             start++;//
@@ -109,7 +109,7 @@ public class reverse {
         }
     }
 
-    public static void main(String[] args) {//
+    public static void main(String[] args) {//o
         int numbers[] = {2, 4, 6, 8, 10};
         reverse(numbers);//
         for (int i = 0; i < numbers.length; i++) {
