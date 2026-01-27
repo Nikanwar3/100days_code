@@ -6,7 +6,7 @@ public class recursive {
             System.out.println("Base case reached");
             return;
         }
-        System.out.println("Current value: " + n);
+        System.out.println("Current value: " + n);//
         recursiveFunction(n - 1);
 
     }
