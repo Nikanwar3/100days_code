@@ -1,6 +1,6 @@
 package Recursive;
 
-public class recursive {
+public class recursive {//
     public static void recursiveFunction(int n) {
         if (n <= 0) {
             System.out.println("Base case reached");
