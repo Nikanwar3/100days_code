@@ -7,7 +7,7 @@ public class recursive {//
             return;//
         }
         System.out.println("Current value: " + n);//
-        recursiveFunction(n - 1);
+        recursiveFunction(n - 1);//
 
     }
     public  static void main(String[] args) {//
