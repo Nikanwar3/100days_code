@@ -173,6 +173,6 @@ class Codechef//
 		int n = sc.nextInt();
 		
 		// Print the value of n
-		System.out.println(n);
+		System.out.println(n);//
 	}
 }
