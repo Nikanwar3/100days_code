@@ -48,7 +48,7 @@ public class Basic {//
     }
 
     public static void main(String[] args) {//
-        int numbers[] = {1, -2, 6, -1, 3};
+        int numbers[] = {1, -2, 6, -1, 3};// array numbers
         subArray(numbers);
     }
 }
