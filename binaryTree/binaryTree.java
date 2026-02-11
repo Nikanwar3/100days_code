@@ -122,6 +122,6 @@ class Codechef
             i++;
         } while(i <= n);
         
-        System.out.println(fact);
+        System.out.println(fact);// print fact
     }
 }
