@@ -107,7 +107,7 @@
 
 import java.util.Scanner;
 
-class Codechef
+class Codechef//class
 {
     public static void main (String[] args)//
     {
