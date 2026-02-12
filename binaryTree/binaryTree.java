@@ -114,8 +114,8 @@ class Codechef
         Scanner sc = new Scanner(System.in);//
         int n = sc.nextInt();// input n
         
-        long fact = 1;
-        int i = 1;
+        long fact = 1;//
+        int i = 1;//
         
         do {
             fact *= i;
