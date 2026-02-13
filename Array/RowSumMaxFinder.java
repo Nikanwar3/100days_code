@@ -128,8 +128,8 @@ public class RowSumMaxFinder {
 
         System.out.print("Enter number of rows: ");
         int rows = sc.nextInt();
-        System.out.print("Enter number of columns: ");
-        int cols = sc.nextInt();
+        System.out.print("Enter number of columns: ");//
+        int cols = sc.nextInt();//
 
         int[][] matrix = new int[rows][cols];
 
