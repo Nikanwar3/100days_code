@@ -1,54 +1,57 @@
-// // 
+// class Basic {
 
+//     public static int trappedWater(int height[]) {
 
-// public class Basic{
-//     public static void subArray(int numbers[]){
-//         int currSum =0;
-//         int maxSum = Integer.MIN_VALUE;
-//         for(int i =0; i<numbers.length;i++){
-//             int start = i;
-//             for (int j =i; j<numbers.length;j++){
-//                 int end = j;
-//                 currSum = 0;
-//                 for(int k = start; k<=end;k++){
-//                     currSum += numbers[k];
+//         int n = height.length;
 
-//                 }
-//                 if (maxSum< currSum){
-//                     maxSum= currSum;
-//                 }
-//                 }
-//             }
+//         // Step 1: Create left max array
+//         int leftMax[] = new int[n];
+//         leftMax[0] = height[0];
+//         for (int i = 1; i < n; i++) {
+//             leftMax[i] = Math.max(height[i], leftMax[i - 1]);
 //         }
-//         System.out.println("Maximum SubArray Sum is: " + maxSum);
+
+//         // Step 2: Create right max array
+//         int rightMax[] = new int[n];
+//         rightMax[n - 1] = height[n - 1];
+//         for (int i = n - 2; i >= 0; i--) {
+//             rightMax[i] = Math.max(height[i], rightMax[i + 1]);
+//         }
+
+//         // Step 3: Calculate trapped water
+//         int trappedWater = 0;
+//         for (int i = 0; i < n; i++) {
+//             int waterLevel = Math.min(leftMax[i], rightMax[i]);
+//             trappedWater += waterLevel - height[i];
+//         }
+
+//         return trappedWater;
+//     }
+
+//     public static void main(String[] args) {
+//         int height[] = {4, 2, 0, 6, 3, 2, 5};
+//         System.out.println("Trapped water is: " + trappedWater(height));
 //     }
 // }
 
-public class Basic {//
-    public static void subArray(int numbers[]) {
-        int n = numbers.length;//
-        int maxSum = Integer.MIN_VALUE;//
+public class Basic{
+    public static int buySell(int prices[]){
+        int buyPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for(int i =0;i<prices.length;i++){
+            if(buyPrice < prices[i]){
+               int profit  = prices[i] -    buyPrice;
+               maxProfit = Math.max(profit, maxProfit);
 
-        // Step 1: create prefix sum array
-        int prefix[] = new int[n];
-        prefix[0] = numbers[0];//
-        for (int i = 1; i < n; i++) {
-            prefix[i] = prefix[i - 1] + numbers[i];
+
+            }else{
+                buyPrice = prices[i];
+            }
         }
 
-        // Step 2: calculate subarray sums using prefix
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
-                int currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
-                maxSum = Math.max(maxSum, currSum);
-            }//
-        }
-
-        System.out.println("Maximum SubArray Sum is: " + maxSum);//
     }
-
-    public static void main(String[] args) {//
-        int numbers[] = {1, -2, 6, -1, 3};// array numbers
-        subArray(numbers);
+    public static void main(String[]args){
+        int prices[] = {7,1,5,3,6,4};
+        System.out.println("Max profit is : " + buySell(prices));
     }
 }
