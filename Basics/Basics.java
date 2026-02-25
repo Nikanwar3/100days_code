@@ -78,7 +78,7 @@ public class Basics{
                 if (numbers[j] > numbers[j+1){
                     temp = numbers[j];
                     numbers[j] = numbers[j+1];
-                    numbers[j+1] = temp;
+                    numbers[j+1] = temp;//
                     
 
                 }
