@@ -76,7 +76,7 @@ public class Basics{
         for(int turn =0; turn<numbers.length-1;turn++){
             for(int j =0; j<numbers.length-1-turn;j++){
                 if (numbers[j] > numbers[j+1){//
-                    temp = numbers[j];
+                    temp = numbers[j];//
                     numbers[j] = numbers[j+1];//
                     numbers[j+1] = temp;//
                     
