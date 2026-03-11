@@ -103,9 +103,9 @@ public class Main {
 
         // Example logic
         for(int i = 0; i < n; i++){
-            System.out.println(i);
+            System.out.println(i);//
         }
 
-        sc.close();
+        sc.close();//
     }
 }
