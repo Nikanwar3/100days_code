@@ -37,7 +37,7 @@
 // // //         }
         
 // // //         // Update the array
-// // //         Update(marks);                  // in
+// // //         Update(marks);                  // in line
         
 // // //         // Print updated array
 // // //         System.out.println("\nUpdated marks:");
