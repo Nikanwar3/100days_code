@@ -1,3 +1,4 @@
+// basic class
 // // // // class Basic {
 
 // // // //     public static int trappedWater(int height[]) {
