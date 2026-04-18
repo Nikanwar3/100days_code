@@ -43,7 +43,7 @@
 // }
 // //
 
-public class OOP {
+//public class OOP {
 
     // Interface for common writing tools
     interface WritingTool {
