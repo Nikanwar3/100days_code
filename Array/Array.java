@@ -8,13 +8,13 @@
 // // //                 largest = numbers[i];
 // // //             }
 // // //         }
-// //         return largest; return
+// //         return largest; return largest
 
 
 // // //     }
 // // //     public static void main(String args[]) {
 // // //         int numbers[] = {1,2,7,3,5};
-// // //         System.out.println("Largest number is: " + getLargest(numbers)); //call
+// // //         System.out.println("Largest number is: " + getLargest(numbers)); //call largest
 // // //     }
 // // // }
 
