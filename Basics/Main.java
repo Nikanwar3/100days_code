@@ -110,3 +110,16 @@ public class Main {
         sc.close();//
     }
 }
+
+
+
+
+static ListNode reverseList(ListNode head) {
+    if (head == null || head.next == null) return head;  // base case
+
+    ListNode newHead = reverseList(head.next);  // recurse to end
+    head.next.next = head;  // reverse the link
+    head.next = null;       // break old link
+    return newHead;
+}
+
