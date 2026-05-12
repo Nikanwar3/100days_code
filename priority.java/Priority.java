@@ -52,7 +52,7 @@
 //     }
 // }
 
-import java.util.PriorityQueue;
+//import java.util.PriorityQueue;
 
 public class Priority {
     static class Student implements Comparable<Student> {
