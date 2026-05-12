@@ -17,13 +17,13 @@ public class TwoSum {
 
     public static void main(String[] args) {
         int[] nums = { 2, 7, 11, 15 };
-        int target = 9;
+        int target = 9;// Example input
 
-        int[] result = twoSum(nums, target);
+        int[] result = twoSum(nums, target);// Should return [0, 1] since nums[0] + nums[1] = 2 + 7 = 9
         if (result.length == 2) {
             System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
         } else {
-            System.out.println("No two sum solution found.");
+            System.out.println("No two sum solution found.");// This should not happen for valid input as per problem statement
         }
     }
 }
