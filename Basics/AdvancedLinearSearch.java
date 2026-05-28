@@ -20,7 +20,7 @@ public class AdvancedLinearSearch {
         if (result.isEmpty()) {
             System.out.println("Key not found");
         } else {
-            System.out.println("Key found at indices: " + result);
+            System.out.println("Key found at indices: " + result);  //..
         }
     }
 }
