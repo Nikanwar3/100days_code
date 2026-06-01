@@ -1,5 +1,5 @@
 // import java.util.*;
-// import package..
+// import package....
 
 public class AdvancedLinearSearch {
     public static List<Integer> linearSearchAll(int[] numbers, int key) {
