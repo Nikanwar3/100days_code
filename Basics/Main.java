@@ -121,5 +121,5 @@ static ListNode reverseList(ListNode head) {
     head.next.next = head;  // reverse the link
     head.next = null;       // break old link
     return newHead;
-}
+//}
 
