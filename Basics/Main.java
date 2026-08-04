@@ -120,6 +120,6 @@ static ListNode reverseList(ListNode head) {
     ListNode newHead = reverseList(head.next);  // recurse to end
     head.next.next = head;  // reverse the link
     head.next = null;       // break old link 
-    return newHead;     // return
+    return newHead;     // return head
 ////}
 
