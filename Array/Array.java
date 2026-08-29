@@ -20,6 +20,32 @@
 
 // // // to update array basic one
 
+public class SecondLargest {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 5, 20, 8, 20, 15};
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int num : arr) {
+
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } 
+            else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+
+        if (secondLargest == Integer.MIN_VALUE) {
+            System.out.println("No second largest element");
+        } else {
+            System.out.println("Second largest: " + secondLargest);
+        }
+    }
+}
 // // // public class Array{
 // // //     public static void Update(int marks[]){
 // // //         for(int i = 0; i < marks.length; i++){
