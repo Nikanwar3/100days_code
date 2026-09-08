@@ -186,3 +186,30 @@ public class Main {
             System.out.println("Element not found");
     }
 }
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int[] arr = {1, 2, 4, 7, 11, 15};
+        int target = 9;
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+            int sum = arr[left] + arr[right];
+
+            if (sum == target) {
+                System.out.println("Found: " + arr[left] + " + " + arr[right]);
+                break;
+            } 
+            else if (sum < target) {
+                left++;
+            } 
+            else {
+                right--;
+            }
+        }
+    }
+}
