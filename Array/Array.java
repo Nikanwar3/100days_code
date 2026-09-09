@@ -213,3 +213,33 @@ public class Main {
         }
     }
 }
+
+public class Main {
+    public static int maxSum(int[] arr, int k) {
+        int windowSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            windowSum += arr[i];
+
+            // Remove element outside the window
+            if (i >= k) {
+                windowSum -= arr[i - k];
+            }
+
+            // Window has size k
+            if (i >= k - 1) {
+                maxSum = Math.max(maxSum, windowSum);
+            }
+        }
+
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {2, 1, 5, 1, 3, 2};
+        int k = 3;
+
+        System.out.println(maxSum(arr, k)); // 9
+    }
+}
