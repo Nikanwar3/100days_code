@@ -1,4 +1,4 @@
-# 100days_code
+# DSA
 
 Java DSA
 100days
