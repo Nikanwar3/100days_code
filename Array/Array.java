@@ -169,7 +169,7 @@ public class Main {
             int mid = low + (high - low) / 2;
 
             if (arr[mid] == target) {
-                return mid;
+                return mid;.
             } else if (arr[mid] < target) {
                 low = mid + 1;
             } else {
