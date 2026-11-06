@@ -230,7 +230,7 @@ public class Main {
 
             // Remove element outside the window
             if (i >= k) {
-                windowSum -= arr[i - k];
+                windowSum -= arr[i - k];.
             }
 
             // Window has size k
