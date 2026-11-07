@@ -81,7 +81,7 @@ public class SecondLargest {
 // // //         int arr[] = {4, 6, 3, 7};
 
 // // //         // Print total number of triangles possible
-// // //         System.out.println("Triangles = " + countTriangles(arr));
+// // //         System.out.println("Triangles = " + countTriangles(arr));.
 // // //     }
 
 // // //     // Function to count number of valid triangles
