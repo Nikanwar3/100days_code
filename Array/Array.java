@@ -18,7 +18,7 @@
 // // //     }
 // // //. }.
 
-// // // to update array basic one
+// // // to update array basic one.
 
 public class SecondLargest {
     public static void main(String[] args) {
