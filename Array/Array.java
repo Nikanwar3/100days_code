@@ -21,7 +21,7 @@
 // // // to update array basic one.
 
 public class SecondLargest {
-    public static void main(String[] args) {
+    public static void main(String[] args) {.
 
         int[] arr = {10, 5, 20, 8, 20, 15};
 
