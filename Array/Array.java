@@ -218,7 +218,7 @@ public class Main {
             }
         }
     }
-}
+}.
 
 public class Main {
     public static int maxSum(int[] arr, int k) {
